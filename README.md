@@ -17,7 +17,7 @@ This project showcases the use of React Refs and Portals, utilizing TypeScript, 
 ### Installation
 
 1. Clone the repository:
-   `git clone https://github.com/PomiHD/refs_portals.git` 2. Install dependencies:
+   `git clone https://github.com/PomiHD/refs_portals.git` 
 2. Install dependencies:
    `npm install`
 
