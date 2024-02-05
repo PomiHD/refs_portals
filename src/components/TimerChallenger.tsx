@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import ResultModel from "./ResultModel";
+import ResultModel, {ResultModelHandles} from "./ResultModel";
 
 /**
  * A timer challenge component
@@ -18,12 +18,12 @@ export default function TimerChallenger({ title, targetTime }) {
   /** @type {React.MutableRefObject<HTMLDialogElement | null>}
    * A reference to the dialog element
    */
-  const dialog = useRef<HTMLDialogElement | null>();
+  const dialog = useRef<ResultModelHandles | null>();
 
   function handleStart() {
     timer.current = setTimeout(() => {
       setTimerExpired(true);
-      dialog.current.showModal();
+      dialog.current?.open();
     }, targetTime * 1000);
     setTimerStarted(true);
   }
