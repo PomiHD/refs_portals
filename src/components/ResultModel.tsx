@@ -26,6 +26,8 @@ export interface ResultModelHandles {
 const ResultModel = forwardRef<ResultModelHandles, ResultModelProps>(
   function ResultModel({ result, targetTime }, ref) {
     const dialog = useRef<HTMLDialogElement | null>();
+    // useImperativeHandle is a hook that allows
+    // you to customize the instance value that is exposed to parent components when using ref.
     useImperativeHandle(ref, () => {
       return {
         open() {
