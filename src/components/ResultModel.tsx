@@ -1,4 +1,4 @@
-import { forwardRef, Ref, useRef, useImperativeHandle } from "react";
+import { forwardRef, useImperativeHandle, useRef } from "react";
 
 interface ResultModelProps {
   result: string;

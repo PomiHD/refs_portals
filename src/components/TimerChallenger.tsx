@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import ResultModel, {ResultModelHandles} from "./ResultModel";
+import ResultModel, { ResultModelHandles } from "./ResultModel";
 
 /**
  * A timer challenge component
@@ -10,7 +10,7 @@ import ResultModel, {ResultModelHandles} from "./ResultModel";
 export default function TimerChallenger({ title, targetTime }) {
   const [timerStarted, setTimerStarted] = useState(false);
   const [timerExpired, setTimerExpired] = useState(false);
-  
+
   /** @type {React.MutableRefObject<NodeJS.Timeout | null>}
    * A reference to the timer
    */
