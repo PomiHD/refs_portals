@@ -24,8 +24,7 @@ This project showcases the use of React Refs and Portals, utilizing TypeScript, 
 ### Running
 
 To start the project, run:
-
-    ```npm start```
+   `npm start`
 
 # React Refs and Portals Demo
 
